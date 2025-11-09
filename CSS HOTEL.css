@@ -4,11 +4,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f7f4f1;
       color: #4d4c4b;
-      @media screen {max-width: 575.98px}
-        
-          }
-
-    
+  }
 
     /* MENU BAR */
     .menu {
@@ -175,3 +171,4 @@
       font-size: 18px;
 
     }
+
