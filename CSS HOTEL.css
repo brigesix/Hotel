@@ -3,8 +3,10 @@
       padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f7f4f1;
-      color: #4d4c4b;
-  }
+      color: #4d4c4b;    
+    }
+
+    
 
     /* MENU BAR */
     .menu {
@@ -20,6 +22,7 @@
       width: 100%;
       z-index: 1000;
     }
+
 
     /* LOGO AREA */
     .logo {
@@ -169,6 +172,4 @@
 
     .contact p {
       font-size: 18px;
-
     }
-
