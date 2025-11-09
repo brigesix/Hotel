@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Us | Hotel Zanderson</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f4f1;
+      color: #4d4c4b;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .email-container {
+      background-color: white;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      width: 90%;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 15px;
+      color: #4d4c4b;
+    }
+
+    p {
+      margin-bottom: 25px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: #4d4c4b;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #f0c14b;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="email-container">
+    <h1>Contact Us by Email</h1>
+    <p>We’d love to hear from you. Please send us your message or feedback below:</p>
+
+    <form action="mailto:hotelzanderson@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Send Email">
+    </form>
+  </div>
+
+</body>
+</html>

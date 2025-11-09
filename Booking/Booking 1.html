@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Stay | Hotel Zanderson</title>
+
+  <style>
+    /* General Style */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f4f1;
+      color: #4d4c4b;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #4d4c4b;
+      color: #f7f4f1;
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    /* Booking Form */
+    .booking-form {
+      background-color: white;
+      width: 90%;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .booking-form label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+      color: #4d4c4b;
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      background-color: #f7f4f1;
+      color: #4d4c4b;
+      font-size: 15px;
+    }
+
+    .booking-form input:focus,
+    .booking-form select:focus,
+    .booking-form textarea:focus {
+      outline: none;
+      border-color: #4d4c4b;
+      box-shadow: 0 0 5px rgba(77, 76, 75, 0.3);
+    }
+
+    .submit-btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: #4d4c4b;
+      border: none;
+      color: #f7f4f1;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #6b6968;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #4d4c4b;
+      font-size: 14px;
+      color: #f7f4f1;
+      margin-top: 30px;
+    }
+
+    /* Optional Back Button */
+    .back-home {
+      display: inline-block;
+      margin-top: 15px;
+      text-decoration: none;
+      color: #4d4c4b;
+      border: 2px solid #4d4c4b;
+      padding: 8px 18px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .back-home:hover {
+      background-color: #4d4c4b;
+      color: #f7f4f1;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <header>
+    <img src="z.png" alt="Hotel Zanderson logo" style="width: 50px; height: auto; vertical-align: middle; border-radius: 50%; border-color: black; border-style: initial;">
+    <h1>Hotel Zanderson & Resorts Booking Form</h1>
+    <p>Plan your stay with us and enjoy an unforgettable experience.</p>
+  </header>
+
+  <section class="booking-form">
+    <form action="#" method="post">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="checkin">Check-In Date:</label>
+      <input type="date" id="checkin" name="checkin" required>
+
+      <label for="checkout">Check-Out Date:</label>
+      <input type="date" id="checkout" name="checkout" required>
+
+      <label for="guests">Number of Guests:</label>
+      <select id="guests" name="guests" required>
+        <option value="1">1 Guest</option>
+        <option value="2">2 Guests</option>
+        <option value="3">3 Guests</option>
+        <option value="4">4 Guests</option>
+        <option value="5">5+ Guests</option>
+      </select>
+
+      <label for="room">Room Type:</label>
+      <select id="room" name="room" required>
+        <option value="standard">Standard Room</option>
+        <option value="deluxe">Deluxe Room</option>
+        <option value="suite">Executive Suite</option>
+        <option value="villa">Villa</option>
+      </select>
+
+      <label for="request">Special Requests:</label>
+      <textarea id="request" name="request" rows="4" placeholder="Any special requests or notes..."></textarea>
+
+      <button type="submit" class="submit-btn">Submit Booking</button>
+    </form>
+
+ 
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Hotel Zanderson. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

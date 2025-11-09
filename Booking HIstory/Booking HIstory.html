@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Zanderson | Booking History</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f4f1;
+      color: #4d4c4b;
+    }
+
+    header {
+      background-color: #4d4c4b;
+      color: #f7f4f1;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      padding: 40px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 26px;
+      color: #4d4c4b;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    th, td {
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+      font-size: 16px;
+    }
+
+    th {
+      background-color: #4d4c4b;
+      color: #f7f4f1;
+    }
+
+    tr:hover {
+      background-color: #f0efed;
+    }
+
+    .status {
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 5px 10px;
+      display: inline-block;
+    }
+
+    .completed {
+      background-color: #4d4c4b;
+      color: #f7f4f1;
+    }
+
+    .upcoming {
+      background-color: #bfbab3;
+      color: #4d4c4b;
+    }
+
+    .cancelled {
+      background-color: #c6bebe;
+      color: #4d4c4b;
+    }
+
+    footer {
+      background-color: #4d4c4b;
+      color: #f7f4f1;
+      text-align: center;
+      padding: 12px 0;
+      font-size: 14px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 700px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead tr {
+        display: none;
+      }
+
+      td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+      }
+
+      td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+        color: #4d4c4b;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hotel Zanderson</h1>
+    <p>Your Booking History</p>
+  </header>
+
+  <div class="container">
+    <h2>Recent Reservations</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Booking ID</th>
+          <th>Check-in</th>
+          <th>Check-out</th>
+          <th>Room Type</th>
+          <th>Total Price</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Booking ID">HZ-10234</td>
+          <td data-label="Check-in">2025-10-01</td>
+          <td data-label="Check-out">2025-10-05</td>
+          <td data-label="Room Type">Deluxe Suite</td>
+          <td data-label="Total Price">$850</td>
+          <td data-label="Status"><span class="status completed">Completed</span></td>
+        </tr>
+        <tr>
+          <td data-label="Booking ID">HZ-10345</td>
+          <td data-label="Check-in">2025-11-10</td>
+          <td data-label="Check-out">2025-11-15</td>
+          <td data-label="Room Type">Executive Room</td>
+          <td data-label="Total Price">$720</td>
+          <td data-label="Status"><span class="status upcoming">Upcoming</span></td>
+        </tr>
+        <tr>
+          <td data-label="Booking ID">HZ-10098</td>
+          <td data-label="Check-in">2025-09-02</td>
+          <td data-label="Check-out">2025-09-04</td>
+          <td data-label="Room Type">Standard Room</td>
+          <td data-label="Total Price">$290</td>
+          <td data-label="Status"><span class="status cancelled">Cancelled</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p>© 2025 Hotel Zanderson. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
