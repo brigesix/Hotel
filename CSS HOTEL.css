@@ -173,3 +173,64 @@
     .contact p {
       font-size: 18px;
     }
+
+    /* HAMBURGER MENU STYLE */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #4d4c4b;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+/* RESPONSIVE MENU */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    background-color: #4d4c4b;
+    transition: right 0.3s ease;
+    padding-top: 80px;
+  }
+
+  .menu.active {
+    right: 0;
+  }
+
+  .menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 15px;
+    color: #f7f4f1;
+    text-decoration: none;
+  }
+
+  .dropdown {
+    position: static;
+  }
+
+  .menu li:hover .dropdown {
+    display: none;
+  }
+
+  .menu li:focus-within .dropdown,
+  .menu li.active .dropdown {
+    display: block;
+  }
+}
+
