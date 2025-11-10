@@ -7,11 +7,11 @@
   <link href="CSS HOTEL.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-  
- <link rel="icon" type="image/x-icon" href="z.png"/>
 
+  <!-- HAMBURGER BUTTON -->
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
 
- <!-- ORIGINAL MENU -->
+  <!-- ORIGINAL MENU -->
   <ul class="menu">
     <li><a href="Zanderson.html">Home</a>
       <ul class="dropdown">
@@ -83,20 +83,21 @@
   </ul>
 
 
-    <section class="photo-section">
-      <a class="logo"> <!-- Link to homepage -->
-        <span class="logo-bg";
-         aria-hidden="true"></span>
-      </a>
+  <section class="photo-section">
+    <a class="logo">
+      <span class="logo-bg" aria-hidden="true"></span>
+    </a>
 
-
-      <div class="overlay"></div>
-        <h1><a href="Booking/Booking 1.html" style="color: white; text-decoration: none;">Welcome to Hotel Zanderson & Resorts</a></h1>
-      </div>
-    </section>
-
- 
+    <div class="overlay"></div>
+    <h1><a href="Booking/Booking 1.html" style="color: white; text-decoration: none;">Welcome to Hotel Zanderson & Resorts</a></h1>
   </section>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.menu');
+      menu.classList.toggle('active');
+    }
+  </script>
 
 </body>
 </html>
